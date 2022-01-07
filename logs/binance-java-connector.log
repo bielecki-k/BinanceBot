@@ -1,0 +1,6 @@
+2022-01-07 02:28:59.371[1641518939371] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.1 on DESKTOP-CTDK70A with PID 7372 (C:\Users\admin\IdeaProjects\BinanceBot\BinanceBot\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\BinanceBot)
+2022-01-07 02:28:59.373[1641518939373] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-01-07 02:28:59.794[1641518939794] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 0.734 seconds (JVM running for 1.139)
+2022-01-07 02:28:59.817[1641518939817] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.1 on DESKTOP-CTDK70A with PID 7372 (C:\Users\admin\IdeaProjects\BinanceBot\BinanceBot\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\BinanceBot)
+2022-01-07 02:28:59.817[1641518939817] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-01-07 02:28:59.887[1641518939887] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 0.089 seconds (JVM running for 1.232)
