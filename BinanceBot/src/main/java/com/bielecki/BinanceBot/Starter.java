@@ -13,6 +13,8 @@ public class Starter implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(simpleGetService.requestGet());
+//        System.out.println(simpleGetService.requestGet());
+//        simpleGetService.makeRequest();
+//        simpleGetService.connector();
     }
 }

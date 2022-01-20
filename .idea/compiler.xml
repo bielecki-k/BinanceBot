@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="BinanceBot.BinanceBot.main~1" target="17" />
-      <module name="BinanceBot.BinanceBot.test~1" target="17" />
+      <module name="BinanceBot.BinanceBot.main" target="17" />
+      <module name="BinanceBot.BinanceBot.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
