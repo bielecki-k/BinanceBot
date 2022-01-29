@@ -6,4 +6,9 @@
       <module name="BinanceBot.BinanceBot.test" target="17" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.bielecki.BinanceBot.main" options="--add-modules java.base" />
+    </option>
+  </component>
 </project>
