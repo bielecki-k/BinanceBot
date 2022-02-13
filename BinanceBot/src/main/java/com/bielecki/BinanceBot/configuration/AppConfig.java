@@ -2,6 +2,7 @@ package com.bielecki.BinanceBot.configuration;
 
 import com.bielecki.BinanceBot.entity.PriceHist;
 import com.bielecki.BinanceBot.repository.PriceHistCRUDRepository;
+import com.binance.connector.client.impl.SpotClientImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.sql.Timestamp;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 
@@ -22,7 +24,7 @@ public class AppConfig {
     public CommandLineRunner demoCRUD(PriceHistCRUDRepository repository) {
         return (args) -> {
             // save a new price
-            repository.save(new PriceHist("xx",new Timestamp(System.currentTimeMillis()),12));
+//            repository.save(new PriceHist("xx",new Timestamp(System.currentTimeMillis()),12));
 
 
             // fetch all customers
@@ -33,16 +35,26 @@ public class AppConfig {
             }
             logger.info("");
 
-            // fetch an individual priceHist by name
-            List<PriceHist> priceHist = repository.findPriceBycurencyName("nn");
-            logger.info("PriceHist found with findPriceBycurencyName(nn):");
-            logger.info("--------------------------------");
-            logger.info(priceHist.toString());
-            logger.info("");
-
+//            // fetch an individual priceHist by name
+//            List<PriceHist> priceHist = repository.findPriceBycurencyName("nn");
+//            logger.info("PriceHist found with findPriceBycurencyName(nn):");
+//            logger.info("--------------------------------");
+//            logger.info(priceHist.toString());
+//            logger.info("");
 
         };
     }
+
+//    @Bean
+//    private static void extracted() { //binance simple get price
+//        LinkedHashMap<String,Object> parameters = new LinkedHashMap<>();
+//
+//        SpotClientImpl client = new SpotClientImpl();
+//
+//        parameters.put("symbol","BTCBUSD");
+//        String result = client.createMarket().averagePrice(parameters);
+//        logger.info("bean: {}",result);
+//    }
 
 
 }

@@ -1687,3 +1687,524 @@ Caused by: org.postgresql.util.PSQLException: ERROR: cannot insert into column "
 2022-02-13 13:53:54.320[1644756834320] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-02-13 13:53:54.321[1644756834321] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
 2022-02-13 13:53:54.327[1644756834327] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 14:39:57.366[1644759597366] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 24062 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 14:39:57.367[1644759597367] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 14:39:57.639[1644759597639] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 14:39:57.664[1644759597664] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-02-13 14:39:57.883[1644759597883] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 14:39:57.910[1644759597910] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 14:39:57.999[1644759597999] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 14:39:58.059[1644759598059] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 14:39:58.219[1644759598219] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 14:39:58.235[1644759598235] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 14:39:58.548[1644759598548] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 14:39:58.553[1644759598553] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 14:39:58.783[1644759598783] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.617 seconds (JVM running for 1.882)
+2022-02-13 14:39:58.812[1644759598812] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 14:39:58.812[1644759598812] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 14:39:58.870[1644759598870] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 14:39:58.892[1644759598892] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 14:39:58.892[1644759598892] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 14:39:58.893[1644759598893] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 14:39:58.893[1644759598893] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 14:39:58.895[1644759598895] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 14:39:58.897[1644759598897] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 14:39:58.902[1644759598902] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 14:56:09.642[1644760569642] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 25382 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 14:56:09.644[1644760569644] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 14:56:09.867[1644760569867] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 14:56:09.890[1644760569890] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 14:56:10.101[1644760570101] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 14:56:10.125[1644760570125] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 14:56:10.213[1644760570213] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 14:56:10.270[1644760570270] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 14:56:10.433[1644760570433] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 14:56:10.453[1644760570453] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 14:56:10.750[1644760570750] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 14:56:10.755[1644760570755] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 14:56:10.983[1644760570983] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.538 seconds (JVM running for 1.806)
+2022-02-13 14:56:11.015[1644760571015] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 14:56:11.015[1644760571015] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 14:56:11.086[1644760571086] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 14:56:11.086[1644760571086] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 14:56:11.086[1644760571086] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 14:56:11.086[1644760571086] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 14:56:11.087[1644760571087] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 14:56:11.087[1644760571087] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 14:56:11.087[1644760571087] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 14:56:11.087[1644760571087] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 14:56:11.107[1644760571107] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 14:56:11.107[1644760571107] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 14:56:11.107[1644760571107] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 14:56:11.108[1644760571108] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 14:56:11.109[1644760571109] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 14:56:11.671[1644760571671] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - {"mins":5,"price":"42528.03378399"}
+2022-02-13 14:57:36.619[1644760656619] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 14:57:36.621[1644760656621] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 14:57:36.626[1644760656626] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 14:57:38.766[1644760658766] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 25617 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 14:57:38.767[1644760658767] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 14:57:39.001[1644760659001] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 14:57:39.024[1644760659024] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2022-02-13 14:57:39.241[1644760659241] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 14:57:39.266[1644760659266] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 14:57:39.350[1644760659350] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 14:57:39.406[1644760659406] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 14:57:39.570[1644760659570] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 14:57:39.584[1644760659584] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 14:57:39.879[1644760659879] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 14:57:39.884[1644760659884] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 14:57:40.100[1644760660100] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.521 seconds (JVM running for 1.797)
+2022-02-13 14:57:40.110[1644760660110] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 14:57:40.619[1644760660619] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - {"mins":5,"price":"42529.94431654"}
+2022-02-13 14:57:40.648[1644760660648] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 14:57:40.648[1644760660648] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 14:57:40.711[1644760660711] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 14:57:40.731[1644760660731] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 14:57:40.731[1644760660731] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 14:57:40.731[1644760660731] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 14:57:40.731[1644760660731] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 14:57:40.732[1644760660732] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 14:57:40.994[1644760660994] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - {"mins":5,"price":"42529.94431654"}
+2022-02-13 15:01:40.995[1644760900995] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:01:40.997[1644760900997] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 15:01:41.002[1644760901002] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 15:50:24.876[1644763824876] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 28290 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 15:50:24.877[1644763824877] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 15:50:25.124[1644763825124] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 15:50:25.147[1644763825147] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 15:50:25.375[1644763825375] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 15:50:25.398[1644763825398] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 15:50:25.478[1644763825478] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 15:50:25.536[1644763825536] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 15:50:25.710[1644763825710] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 15:50:25.725[1644763825725] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 15:50:26.017[1644763826017] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 15:50:26.021[1644763826021] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:50:26.192[1644763826192] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 15:50:26.751[1644763826751] | INFO  | main       | c.b.B.configuration.AppConfig        - {"mins":5,"price":"42327.04962578"}
+2022-02-13 15:50:26.793[1644763826793] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 2.107 seconds (JVM running for 2.373)
+2022-02-13 15:50:26.827[1644763826827] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 15:50:26.828[1644763826828] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 15:50:26.894[1644763826894] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 15:50:26.894[1644763826894] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 15:50:26.894[1644763826894] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 15:50:26.895[1644763826895] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 15:50:26.915[1644763826915] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 15:50:26.915[1644763826915] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 15:50:26.915[1644763826915] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 15:50:26.915[1644763826915] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 15:50:38.461[1644763838461] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:50:38.463[1644763838463] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 15:50:38.469[1644763838469] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 15:51:06.468[1644763866468] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 28512 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 15:51:06.469[1644763866469] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 15:51:06.695[1644763866695] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 15:51:06.718[1644763866718] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 15:51:06.939[1644763866939] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 15:51:06.962[1644763866962] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 15:51:07.041[1644763867041] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 15:51:07.093[1644763867093] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 15:51:07.247[1644763867247] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 15:51:07.261[1644763867261] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 15:51:07.557[1644763867557] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 15:51:07.561[1644763867561] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:51:07.746[1644763867746] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 15:51:08.306[1644763868306] | INFO  | main       | c.b.B.configuration.AppConfig        - bean: {"mins":5,"price":"42308.35624518"}
+2022-02-13 15:51:08.352[1644763868352] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 2.068 seconds (JVM running for 2.31)
+2022-02-13 15:51:08.383[1644763868383] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 15:51:08.383[1644763868383] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 15:51:08.438[1644763868438] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 15:51:08.438[1644763868438] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 15:51:08.438[1644763868438] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 15:51:08.438[1644763868438] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 15:51:08.439[1644763868439] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 15:51:08.469[1644763868469] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 15:51:08.469[1644763868469] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 15:51:08.469[1644763868469] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 15:51:08.469[1644763868469] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 15:54:10.278[1644764050278] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:54:10.280[1644764050280] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 15:54:10.285[1644764050285] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 15:56:53.685[1644764213685] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 28856 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 15:56:53.687[1644764213687] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 15:56:53.930[1644764213930] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 15:56:53.953[1644764213953] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 15:56:54.163[1644764214163] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 15:56:54.186[1644764214186] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 15:56:54.274[1644764214274] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 15:56:54.333[1644764214333] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 15:56:54.490[1644764214490] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 15:56:54.503[1644764214503] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 15:56:54.782[1644764214782] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 15:56:54.787[1644764214787] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:56:54.958[1644764214958] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 15:56:55.577[1644764215577] | INFO  | main       | c.b.B.configuration.AppConfig        - bean: {"mins":5,"price":"42357.67888246"}
+2022-02-13 15:56:55.633[1644764215633] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 2.145 seconds (JVM running for 2.397)
+2022-02-13 15:56:55.634[1644764215634] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 15:56:55.634[1644764215634] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 15:56:55.696[1644764215696] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 15:56:55.697[1644764215697] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 15:57:04.439[1644764224439] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:57:04.441[1644764224441] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 15:57:04.447[1644764224447] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 15:57:40.582[1644764260582] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 29073 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 15:57:40.584[1644764260584] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 15:57:40.820[1644764260820] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 15:57:40.843[1644764260843] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 15:57:41.046[1644764261046] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 15:57:41.071[1644764261071] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 15:57:41.154[1644764261154] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 15:57:41.212[1644764261212] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 15:57:41.367[1644764261367] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 15:57:41.381[1644764261381] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 15:57:41.669[1644764261669] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 15:57:41.674[1644764261674] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:57:41.858[1644764261858] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 15:57:42.357[1644764262357] | INFO  | main       | c.b.B.configuration.AppConfig        - bean: {"mins":5,"price":"42392.24790061"}
+2022-02-13 15:57:42.397[1644764262397] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 2.022 seconds (JVM running for 2.295)
+2022-02-13 15:57:42.406[1644764262406] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 15:57:42.406[1644764262406] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 15:57:42.466[1644764262466] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 15:57:42.467[1644764262467] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 15:57:42.467[1644764262467] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 15:57:42.467[1644764262467] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 15:57:42.467[1644764262467] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 15:57:45.743[1644764265743] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 15:57:45.745[1644764265745] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 15:57:45.750[1644764265750] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:10:51.758[1644765051758] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 29483 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:10:51.760[1644765051760] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:10:52.017[1644765052017] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:10:52.044[1644765052044] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:10:52.289[1644765052289] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:10:52.313[1644765052313] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:10:52.398[1644765052398] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:10:52.449[1644765052449] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:10:52.606[1644765052606] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:10:52.620[1644765052620] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:10:52.896[1644765052896] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:10:52.901[1644765052901] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:10:53.077[1644765053077] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:10:53.742[1644765053742] | INFO  | main       | c.b.B.configuration.AppConfig        - bean: {"mins":5,"price":"42620.54318440"}
+2022-02-13 16:10:53.783[1644765053783] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 2.214 seconds (JVM running for 2.465)
+2022-02-13 16:10:53.795[1644765053795] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:10:53.796[1644765053796] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:10:53.796[1644765053796] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:10:53.869[1644765053869] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:11:00.145[1644765060145] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:11:00.147[1644765060147] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:11:00.154[1644765060154] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:11:24.680[1644765084680] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 29708 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:11:24.681[1644765084681] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:11:24.920[1644765084920] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:11:24.947[1644765084947] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:11:25.162[1644765085162] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:11:25.185[1644765085185] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:11:25.266[1644765085266] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:11:25.318[1644765085318] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:11:25.478[1644765085478] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:11:25.492[1644765085492] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:11:25.781[1644765085781] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:11:25.786[1644765085786] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:11:25.975[1644765085975] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:11:26.464[1644765086464] | INFO  | main       | c.b.B.configuration.AppConfig        - bean: {"mins":5,"price":"42621.71591905"}
+2022-02-13 16:11:26.509[1644765086509] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 2.036 seconds (JVM running for 2.277)
+2022-02-13 16:11:26.520[1644765086520] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:11:26.521[1644765086521] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:11:26.521[1644765086521] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:11:26.605[1644765086605] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:11:26.606[1644765086606] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:11:26.606[1644765086606] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:11:26.606[1644765086606] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:11:36.961[1644765096961] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:11:36.963[1644765096963] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:11:36.971[1644765096971] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:14:21.618[1644765261618] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 30066 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:14:21.619[1644765261619] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:14:21.885[1644765261885] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:14:21.908[1644765261908] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:14:22.108[1644765262108] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:14:22.131[1644765262131] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:14:22.213[1644765262213] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:14:22.267[1644765262267] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:14:22.429[1644765262429] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:14:22.443[1644765262443] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:14:22.755[1644765262755] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:14:22.761[1644765262761] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:14:22.987[1644765262987] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.55 seconds (JVM running for 1.792)
+2022-02-13 16:14:22.994[1644765262994] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:14:22.996[1644765262996] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:14:23.528[1644765263528] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42622.22664427"}
+2022-02-13 16:14:23.529[1644765263529] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:14:23.529[1644765263529] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:14:23.592[1644765263592] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:14:23.593[1644765263593] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:17:32.823[1644765452823] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:17:32.825[1644765452825] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:17:32.832[1644765452832] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:17:34.608[1644765454608] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 30418 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:17:34.609[1644765454609] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:17:34.837[1644765454837] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:17:34.859[1644765454859] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:17:35.069[1644765455069] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:17:35.092[1644765455092] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:17:35.187[1644765455187] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:17:35.244[1644765455244] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:17:35.407[1644765455407] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:17:35.422[1644765455422] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:17:35.711[1644765455711] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:17:35.715[1644765455715] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:17:35.965[1644765455965] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.538 seconds (JVM running for 1.802)
+2022-02-13 16:17:35.973[1644765455973] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:17:35.974[1644765455974] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:17:36.959[1644765456959] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42624.48155010"}
+2022-02-13 16:17:36.960[1644765456960] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:17:36.960[1644765456960] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:17:37.020[1644765457020] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:17:37.020[1644765457020] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:17:37.020[1644765457020] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:17:37.020[1644765457020] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:17:37.021[1644765457021] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:17:40.897[1644765460897] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:17:40.899[1644765460899] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:17:40.906[1644765460906] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:18:36.214[1644765516214] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 30636 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:18:36.216[1644765516216] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:18:36.420[1644765516420] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:18:36.445[1644765516445] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:18:36.681[1644765516681] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:18:36.705[1644765516705] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:18:36.789[1644765516789] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:18:36.843[1644765516843] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:18:36.995[1644765516995] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:18:37.010[1644765517010] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:18:37.286[1644765517286] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:18:37.291[1644765517291] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:18:37.520[1644765517520] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.492 seconds (JVM running for 1.748)
+2022-02-13 16:18:37.528[1644765517528] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:18:37.529[1644765517529] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:18:38.063[1644765518063] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42623.26768001"}
+2022-02-13 16:18:38.065[1644765518065] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:18:38.065[1644765518065] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:18:38.137[1644765518137] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:18:38.138[1644765518138] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:18:38.138[1644765518138] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:18:38.138[1644765518138] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:18:38.138[1644765518138] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:18:39.926[1644765519926] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:18:39.928[1644765519928] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:18:39.934[1644765519934] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:24:32.365[1644765872365] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 31135 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:24:32.366[1644765872366] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:24:32.565[1644765872565] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:24:32.590[1644765872590] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:24:32.838[1644765872838] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:24:32.860[1644765872860] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:24:32.938[1644765872938] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:24:32.990[1644765872990] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:24:33.136[1644765873136] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:24:33.150[1644765873150] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:24:33.440[1644765873440] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:24:33.444[1644765873444] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:24:33.667[1644765873667] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.492 seconds (JVM running for 1.752)
+2022-02-13 16:24:33.676[1644765873676] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:24:33.678[1644765873678] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:24:34.201[1644765874201] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42651.02655424"}
+2022-02-13 16:24:34.202[1644765874202] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:24:34.203[1644765874203] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:24:34.272[1644765874272] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:24:37.310[1644765877310] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:24:37.312[1644765877312] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:24:37.319[1644765877319] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:25:05.124[1644765905124] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 31357 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:25:05.125[1644765905125] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:25:05.354[1644765905354] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:25:05.377[1644765905377] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:25:05.613[1644765905613] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:25:05.638[1644765905638] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:25:05.732[1644765905732] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:25:05.783[1644765905783] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:25:05.930[1644765905930] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:25:05.944[1644765905944] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:25:06.236[1644765906236] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:25:06.240[1644765906240] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:25:06.468[1644765906468] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.553 seconds (JVM running for 1.809)
+2022-02-13 16:25:06.477[1644765906477] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:25:06.478[1644765906478] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:25:06.967[1644765906967] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42656.55641868"}
+2022-02-13 16:25:06.990[1644765906990] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:25:06.991[1644765906991] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:25:07.046[1644765907046] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=11, currency_name='xx', timestamp=2022-02-13 16:25:06.967, price=12.0}
+2022-02-13 16:25:07.047[1644765907047] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:25:12.322[1644765912322] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:25:12.324[1644765912324] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:25:12.333[1644765912333] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:25:20.633[1644765920633] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 31570 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:25:20.634[1644765920634] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:25:20.829[1644765920829] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:25:20.853[1644765920853] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:25:21.087[1644765921087] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:25:21.111[1644765921111] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:25:21.197[1644765921197] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:25:21.251[1644765921251] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:25:21.396[1644765921396] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:25:21.410[1644765921410] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:25:21.680[1644765921680] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:25:21.685[1644765921685] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:25:21.901[1644765921901] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.458 seconds (JVM running for 1.718)
+2022-02-13 16:25:21.910[1644765921910] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:25:21.911[1644765921911] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:25:22.405[1644765922405] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42656.56372351"}
+2022-02-13 16:25:22.431[1644765922431] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:25:22.432[1644765922432] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:25:22.484[1644765922484] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:25:22.485[1644765922485] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:25:22.485[1644765922485] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:25:22.485[1644765922485] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=11, currency_name='xx', timestamp=2022-02-13 16:25:06.967, price=12.0}
+2022-02-13 16:25:22.485[1644765922485] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=12, currency_name='BTCBUSD', timestamp=2022-02-13 16:25:22.406, price=12.0}
+2022-02-13 16:25:22.485[1644765922485] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:25:32.214[1644765932214] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:25:32.216[1644765932216] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:25:32.223[1644765932223] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 16:26:32.262[1644765992262] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 31816 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 16:26:32.263[1644765992263] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 16:26:32.454[1644765992454] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 16:26:32.477[1644765992477] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2022-02-13 16:26:32.740[1644765992740] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 16:26:32.762[1644765992762] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 16:26:32.853[1644765992853] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 16:26:32.903[1644765992903] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 16:26:33.061[1644765993061] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 16:26:33.075[1644765993075] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 16:26:33.390[1644765993390] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 16:26:33.394[1644765993394] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:26:33.613[1644765993613] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.547 seconds (JVM running for 1.797)
+2022-02-13 16:26:33.621[1644765993621] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - service getAndSavePrice
+2022-02-13 16:26:33.622[1644765993622] | INFO  | main       | c.b.c.client.utils.RequestHandler    - GET https://api.binance.com/api/v3/avgPrice?symbol=BTCBUSD
+2022-02-13 16:26:34.155[1644765994155] | INFO  | main       | c.b.B.service.GetAndSaveServiceImpl  - bean: {"mins":5,"price":"42654.81436468"}
+2022-02-13 16:26:34.179[1644765994179] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 16:26:34.179[1644765994179] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=6, currency_name='xx', timestamp=2022-02-13 14:39:58.793, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=7, currency_name='xx', timestamp=2022-02-13 14:56:10.994, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=8, currency_name='xx', timestamp=2022-02-13 14:57:40.621, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=9, currency_name='xx', timestamp=2022-02-13 15:50:26.806, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=10, currency_name='xx', timestamp=2022-02-13 15:51:08.365, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=11, currency_name='xx', timestamp=2022-02-13 16:25:06.967, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=12, currency_name='BTCBUSD', timestamp=2022-02-13 16:25:22.406, price=12.0}
+2022-02-13 16:26:34.231[1644765994231] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=13, currency_name='BTCBUSD', timestamp=2022-02-13 16:26:34.156, price=12.0}
+2022-02-13 16:26:34.232[1644765994232] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 16:26:37.872[1644765997872] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 16:26:37.874[1644765997874] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 16:26:37.884[1644765997884] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
