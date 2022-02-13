@@ -1,6 +1,6 @@
 package com.bielecki.BinanceBot.service;
 
-import com.bielecki.BinanceBot.configuration.PrivateConfig;
+import com.bielecki.BinanceBot.configuration.PrivateBinanceConfig;
 import com.binance.connector.client.enums.DefaultUrls;
 import com.binance.connector.client.impl.SpotClientImpl;
 import com.binance.connector.client.impl.WebsocketClientImpl;
@@ -11,7 +11,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -64,7 +63,7 @@ public class SimpleGetServiceImpl {
 
     public void connector(){
         WebsocketClientImpl wsClient = new WebsocketClientImpl(DefaultUrls.TESTNET_WSS_URL);
-        SpotClientImpl spotClient = new SpotClientImpl(PrivateConfig.TESTNET_API_KEY, PrivateConfig.TESTNET_SECRET_KEY, DefaultUrls.TESTNET_URL);
+        SpotClientImpl spotClient = new SpotClientImpl(PrivateBinanceConfig.TESTNET_API_KEY, PrivateBinanceConfig.TESTNET_SECRET_KEY, DefaultUrls.TESTNET_URL);
         JSONObject obj = new JSONObject(spotClient.createUserData().createListenKey());
         String listenKey = obj.getString("listenKey");
         System.out.println("listenKey:" + listenKey);

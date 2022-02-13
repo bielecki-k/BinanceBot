@@ -8,7 +8,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="com.bielecki.BinanceBot.main" options="--add-modules java.base" />
+      <module name="com.bielecki.BinanceBot.main" options="--add-modules java.base,java.sql" />
     </option>
   </component>
 </project>

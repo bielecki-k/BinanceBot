@@ -19,6 +19,13 @@ dependencies {
 	implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.6.1'
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.3'
+	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.5.Final'
+	implementation group: 'org.springframework', name: 'spring-orm', version: '5.3.15'
+	// https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp
+	implementation group: 'commons-dbcp', name: 'commons-dbcp', version: '1.2.2'
+
+
+
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
