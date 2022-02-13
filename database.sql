@@ -28,7 +28,7 @@ SET default_table_access_method = heap;
 --
 -- Name: price_hist; Type: TABLE; Schema: public; Owner: binancebot
 --
-
+-- TODO update me - primary key
 CREATE TABLE public.price_hist (
     id integer NOT NULL,
     currency_name character varying NOT NULL,

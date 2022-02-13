@@ -1084,3 +1084,606 @@ Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Long.longVal
 2022-02-13 10:58:52.832[1644746332832] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-02-13 10:58:52.834[1644746332834] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
 2022-02-13 10:58:52.842[1644746332842] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 11:49:01.171[1644749341171] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 15426 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 11:49:01.173[1644749341173] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 11:49:01.428[1644749341428] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 11:49:01.451[1644749341451] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 11:49:01.657[1644749341657] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 11:49:01.681[1644749341681] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 11:49:01.770[1644749341770] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 11:49:01.828[1644749341828] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 11:49:01.980[1644749341980] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 11:49:01.994[1644749341994] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 11:49:02.319[1644749342319] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 11:49:02.324[1644749342324] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:49:02.552[1644749342552] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.578 seconds (JVM running for 1.825)
+2022-02-13 11:49:02.591[1644749342591] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-13 11:49:02.600[1644749342600] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bielecki.BinanceBot.BinanceBotApplication.main(BinanceBotApplication.java:15)
+Caused by: org.springframework.beans.InvalidPropertyException: Invalid property 'id' of bean class [com.bielecki.BinanceBot.entity.PriceHist]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:708)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
+	at org.springframework.data.util.DirectFieldAccessFallbackBeanWrapper.getPropertyValue(DirectFieldAccessFallbackBeanWrapper.java:52)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.getId(JpaMetamodelEntityInformation.java:162)
+	at org.springframework.data.repository.core.support.AbstractEntityInformation.isNew(AbstractEntityInformation.java:46)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.isNew(JpaMetamodelEntityInformation.java:246)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:629)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.save(Unknown Source)
+	at com.bielecki.BinanceBot.configuration.AppConfig.lambda$demoCRUD$0(AppConfig.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.BeanWrapperImpl$BeanPropertyHandler.getValue(BeanWrapperImpl.java:308)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:630)
+	... 41 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "this.id" is null
+	at com.bielecki.BinanceBot.entity.PriceHist.getId(PriceHist.java:43)
+	... 47 common frames omitted
+2022-02-13 11:49:02.601[1644749342601] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:49:02.603[1644749342603] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 11:49:02.607[1644749342607] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 11:52:52.227[1644749572227] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 15843 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 11:52:52.229[1644749572229] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 11:52:52.457[1644749572457] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 11:52:52.480[1644749572480] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 11:52:52.687[1644749572687] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 11:52:52.711[1644749572711] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 11:52:52.794[1644749572794] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 11:52:52.848[1644749572848] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 11:52:53.006[1644749573006] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 11:52:53.019[1644749573019] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 11:52:53.313[1644749573313] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 11:52:53.319[1644749573319] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:52:53.532[1644749573532] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.509 seconds (JVM running for 1.745)
+2022-02-13 11:52:53.547[1644749573547] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-13 11:52:53.555[1644749573555] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bielecki.BinanceBot.BinanceBotApplication.main(BinanceBotApplication.java:15)
+Caused by: org.springframework.beans.InvalidPropertyException: Invalid property 'id' of bean class [com.bielecki.BinanceBot.entity.PriceHist]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:708)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
+	at org.springframework.data.util.DirectFieldAccessFallbackBeanWrapper.getPropertyValue(DirectFieldAccessFallbackBeanWrapper.java:52)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.getId(JpaMetamodelEntityInformation.java:162)
+	at org.springframework.data.repository.core.support.AbstractEntityInformation.isNew(AbstractEntityInformation.java:46)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.isNew(JpaMetamodelEntityInformation.java:246)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:629)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.save(Unknown Source)
+	at com.bielecki.BinanceBot.configuration.AppConfig.lambda$demoCRUD$0(AppConfig.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.BeanWrapperImpl$BeanPropertyHandler.getValue(BeanWrapperImpl.java:308)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:630)
+	... 41 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "this.id" is null
+	at com.bielecki.BinanceBot.entity.PriceHist.getId(PriceHist.java:43)
+	... 47 common frames omitted
+2022-02-13 11:52:53.556[1644749573556] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:52:53.557[1644749573557] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 11:52:53.563[1644749573563] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 11:55:11.862[1644749711862] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 16079 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 11:55:11.863[1644749711863] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 11:55:12.090[1644749712090] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 11:55:12.112[1644749712112] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 11:55:12.319[1644749712319] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 11:55:12.344[1644749712344] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 11:55:12.426[1644749712426] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 11:55:12.490[1644749712490] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 11:55:12.662[1644749712662] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 11:55:12.676[1644749712676] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 11:55:13.027[1644749713027] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 11:55:13.032[1644749713032] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:55:13.287[1644749713287] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.615 seconds (JVM running for 1.868)
+2022-02-13 11:55:13.303[1644749713303] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-13 11:55:13.311[1644749713311] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bielecki.BinanceBot.BinanceBotApplication.main(BinanceBotApplication.java:15)
+Caused by: org.springframework.beans.InvalidPropertyException: Invalid property 'id' of bean class [com.bielecki.BinanceBot.entity.PriceHist]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:708)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
+	at org.springframework.data.util.DirectFieldAccessFallbackBeanWrapper.getPropertyValue(DirectFieldAccessFallbackBeanWrapper.java:52)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.getId(JpaMetamodelEntityInformation.java:162)
+	at org.springframework.data.repository.core.support.AbstractEntityInformation.isNew(AbstractEntityInformation.java:46)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.isNew(JpaMetamodelEntityInformation.java:246)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:629)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.save(Unknown Source)
+	at com.bielecki.BinanceBot.configuration.AppConfig.lambda$demoCRUD$0(AppConfig.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.BeanWrapperImpl$BeanPropertyHandler.getValue(BeanWrapperImpl.java:308)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:630)
+	... 41 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "this.id" is null
+	at com.bielecki.BinanceBot.entity.PriceHist.getId(PriceHist.java:43)
+	... 47 common frames omitted
+2022-02-13 11:55:13.313[1644749713313] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:55:13.314[1644749713314] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 11:55:13.322[1644749713322] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 11:56:32.813[1644749792813] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 16477 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 11:56:32.814[1644749792814] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 11:56:33.090[1644749793090] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 11:56:33.113[1644749793113] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 11:56:33.323[1644749793323] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 11:56:33.348[1644749793348] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 11:56:33.433[1644749793433] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 11:56:33.491[1644749793491] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 11:56:33.655[1644749793655] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 11:56:33.668[1644749793668] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 11:56:33.957[1644749793957] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 11:56:33.963[1644749793963] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:56:34.177[1644749794177] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.562 seconds (JVM running for 1.818)
+2022-02-13 11:56:34.208[1644749794208] | WARN  | main       | o.h.e.jdbc.spi.SqlExceptionHelper    - SQL Error: 0, SQLState: 428C9
+2022-02-13 11:56:34.208[1644749794208] | ERROR | main       | o.h.e.jdbc.spi.SqlExceptionHelper    - ERROR: cannot insert into column "id"
+  Detail: Column "id" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+2022-02-13 11:56:34.209[1644749794209] | INFO  | main       | o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2022-02-13 11:56:34.212[1644749794212] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-13 11:56:34.220[1644749794220] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bielecki.BinanceBot.BinanceBotApplication.main(BinanceBotApplication.java:15)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.save(Unknown Source)
+	at com.bielecki.BinanceBot.configuration.AppConfig.lambda$demoCRUD$0(AppConfig.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1402)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:493)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3285)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2420)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	... 21 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: cannot insert into column "id"
+  Detail: Column "id" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:162)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:130)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 42 common frames omitted
+2022-02-13 11:56:34.222[1644749794222] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 11:56:34.223[1644749794223] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 11:56:34.229[1644749794229] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 12:47:03.075[1644752823075] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 18570 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 12:47:03.076[1644752823076] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 12:47:03.303[1644752823303] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 12:47:03.328[1644752823328] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-02-13 12:47:03.569[1644752823569] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 12:47:03.593[1644752823593] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 12:47:03.680[1644752823680] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 12:47:03.736[1644752823736] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 12:47:03.898[1644752823898] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 12:47:03.912[1644752823912] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 12:47:04.199[1644752824199] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 12:47:04.204[1644752824204] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 12:47:04.415[1644752824415] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.524 seconds (JVM running for 1.759)
+2022-02-13 12:47:04.446[1644752824446] | WARN  | main       | o.h.e.jdbc.spi.SqlExceptionHelper    - SQL Error: 0, SQLState: 428C9
+2022-02-13 12:47:04.447[1644752824447] | ERROR | main       | o.h.e.jdbc.spi.SqlExceptionHelper    - ERROR: cannot insert into column "id"
+  Detail: Column "id" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+2022-02-13 12:47:04.447[1644752824447] | INFO  | main       | o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2022-02-13 12:47:04.450[1644752824450] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-13 12:47:04.458[1644752824458] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bielecki.BinanceBot.BinanceBotApplication.main(BinanceBotApplication.java:15)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.save(Unknown Source)
+	at com.bielecki.BinanceBot.configuration.AppConfig.lambda$demoCRUD$0(AppConfig.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1402)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:493)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3285)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2420)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	... 21 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: cannot insert into column "id"
+  Detail: Column "id" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:162)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:130)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 42 common frames omitted
+2022-02-13 12:47:04.459[1644752824459] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 12:47:04.461[1644752824461] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 12:47:04.469[1644752824469] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 13:02:27.673[1644753747673] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 19854 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 13:02:27.674[1644753747674] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 13:02:27.907[1644753747907] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 13:02:27.930[1644753747930] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 13:02:28.141[1644753748141] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 13:02:28.166[1644753748166] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 13:02:28.253[1644753748253] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 13:02:28.305[1644753748305] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 13:02:28.467[1644753748467] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 13:02:28.481[1644753748481] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 13:02:28.783[1644753748783] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 13:02:28.788[1644753748788] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:02:29.004[1644753749004] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.516 seconds (JVM running for 1.76)
+2022-02-13 13:02:29.035[1644753749035] | WARN  | main       | o.h.e.jdbc.spi.SqlExceptionHelper    - SQL Error: 0, SQLState: 428C9
+2022-02-13 13:02:29.035[1644753749035] | ERROR | main       | o.h.e.jdbc.spi.SqlExceptionHelper    - ERROR: cannot insert into column "id"
+  Detail: Column "id" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+2022-02-13 13:02:29.035[1644753749035] | INFO  | main       | o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2022-02-13 13:02:29.039[1644753749039] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-13 13:02:29.047[1644753749047] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bielecki.BinanceBot.BinanceBotApplication.main(BinanceBotApplication.java:15)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.save(Unknown Source)
+	at com.bielecki.BinanceBot.configuration.AppConfig.lambda$demoCRUD$0(AppConfig.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1402)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:493)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3285)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2420)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	... 21 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: cannot insert into column "id"
+  Detail: Column "id" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:162)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:130)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 42 common frames omitted
+2022-02-13 13:02:29.048[1644753749048] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:02:29.050[1644753749050] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 13:02:29.057[1644753749057] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 13:07:45.568[1644754065568] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 20661 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 13:07:45.569[1644754065569] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 13:07:45.794[1644754065794] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 13:07:45.817[1644754065817] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 13:07:46.029[1644754066029] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 13:07:46.052[1644754066052] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 13:07:46.139[1644754066139] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 13:07:46.192[1644754066192] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 13:07:46.352[1644754066352] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 13:07:46.366[1644754066366] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 13:07:46.675[1644754066675] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 13:07:46.680[1644754066680] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:07:46.909[1644754066909] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.529 seconds (JVM running for 1.776)
+2022-02-13 13:07:46.940[1644754066940] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:07:46.941[1644754066941] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 13:07:46.948[1644754066948] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 13:08:04.044[1644754084044] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 20867 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 13:08:04.045[1644754084045] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 13:08:04.279[1644754084279] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 13:08:04.302[1644754084302] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 13:08:04.514[1644754084514] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 13:08:04.537[1644754084537] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 13:08:04.620[1644754084620] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 13:08:04.675[1644754084675] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 13:08:04.857[1644754084857] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 13:08:04.870[1644754084870] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 13:08:05.160[1644754085160] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 13:08:05.164[1644754085164] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:08:05.378[1644754085378] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.518 seconds (JVM running for 1.765)
+2022-02-13 13:08:05.406[1644754085406] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:08:05.408[1644754085408] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 13:08:05.415[1644754085415] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 13:53:17.508[1644756797508] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 21729 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 13:53:17.509[1644756797509] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 13:53:17.752[1644756797752] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 13:53:17.775[1644756797775] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-02-13 13:53:17.979[1644756797979] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 13:53:18.003[1644756798003] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 13:53:18.089[1644756798089] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 13:53:18.144[1644756798144] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 13:53:18.297[1644756798297] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 13:53:18.311[1644756798311] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 13:53:18.586[1644756798586] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 13:53:18.590[1644756798590] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:53:18.829[1644756798829] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.505 seconds (JVM running for 1.773)
+2022-02-13 13:53:18.860[1644756798860] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 13:53:18.860[1644756798860] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 13:53:18.932[1644756798932] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 13:53:18.932[1644756798932] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 13:53:18.932[1644756798932] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 13:53:18.932[1644756798932] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 13:53:18.932[1644756798932] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 13:53:18.954[1644756798954] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 13:53:18.954[1644756798954] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 13:53:18.954[1644756798954] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 13:53:18.954[1644756798954] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 13:53:18.957[1644756798957] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:53:18.959[1644756798959] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 13:53:18.966[1644756798966] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2022-02-13 13:53:52.873[1644756832873] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Starting BinanceBotApplication using Java 17.0.2 on keru-MS-7C02 with PID 21946 (/home/keru/IdeaProjects/BinanceBot/BinanceBot/build/classes/java/main started by keru in /home/keru/IdeaProjects/BinanceBot)
+2022-02-13 13:53:52.874[1644756832874] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - No active profile set, falling back to default profiles: default
+2022-02-13 13:53:53.121[1644756833121] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-13 13:53:53.145[1644756833145] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-02-13 13:53:53.353[1644756833353] | INFO  | main       | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-13 13:53:53.377[1644756833377] | INFO  | main       | org.hibernate.Version                - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-13 13:53:53.461[1644756833461] | INFO  | main       | o.h.annotations.common.Version       - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-13 13:53:53.520[1644756833520] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2022-02-13 13:53:53.681[1644756833681] | INFO  | main       | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2022-02-13 13:53:53.695[1644756833695] | INFO  | main       | org.hibernate.dialect.Dialect        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-13 13:53:53.977[1644756833977] | INFO  | main       | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-13 13:53:53.982[1644756833982] | INFO  | main       | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:53:54.217[1644756834217] | INFO  | main       | c.b.BinanceBot.BinanceBotApplication - Started BinanceBotApplication in 1.533 seconds (JVM running for 1.77)
+2022-02-13 13:53:54.245[1644756834245] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findAll():
+2022-02-13 13:53:54.245[1644756834245] | INFO  | main       | c.b.B.configuration.AppConfig        - -------------------------------
+2022-02-13 13:53:54.297[1644756834297] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}
+2022-02-13 13:53:54.297[1644756834297] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=2, currency_name='xx', timestamp=2022-02-13 13:07:46.918, price=12.0}
+2022-02-13 13:53:54.297[1644756834297] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=3, currency_name='xx', timestamp=2022-02-13 13:08:05.387, price=12.0}
+2022-02-13 13:53:54.297[1644756834297] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=4, currency_name='xx', timestamp=2022-02-13 13:53:18.838, price=12.0}
+2022-02-13 13:53:54.297[1644756834297] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist{id=5, currency_name='xx', timestamp=2022-02-13 13:53:54.226, price=12.0}
+2022-02-13 13:53:54.297[1644756834297] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 13:53:54.317[1644756834317] | INFO  | main       | c.b.B.configuration.AppConfig        - PriceHist found with findPriceBycurencyName(nn):
+2022-02-13 13:53:54.318[1644756834318] | INFO  | main       | c.b.B.configuration.AppConfig        - --------------------------------
+2022-02-13 13:53:54.318[1644756834318] | INFO  | main       | c.b.B.configuration.AppConfig        - [PriceHist{id=1, currency_name='nn', timestamp=2022-02-13 11:49:02.561, price=12.0}]
+2022-02-13 13:53:54.318[1644756834318] | INFO  | main       | c.b.B.configuration.AppConfig        - 
+2022-02-13 13:53:54.320[1644756834320] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-13 13:53:54.321[1644756834321] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2022-02-13 13:53:54.327[1644756834327] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.

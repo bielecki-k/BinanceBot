@@ -22,7 +22,6 @@ public class AppConfig {
     public CommandLineRunner demoCRUD(PriceHistCRUDRepository repository) {
         return (args) -> {
             // save a new price
-            repository.save(new PriceHist(1L,"nn",new Timestamp(System.currentTimeMillis()),12));
             repository.save(new PriceHist("xx",new Timestamp(System.currentTimeMillis()),12));
 
 

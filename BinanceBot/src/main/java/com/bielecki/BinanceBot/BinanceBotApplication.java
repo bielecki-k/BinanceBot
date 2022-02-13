@@ -13,9 +13,6 @@ public class BinanceBotApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BinanceBotApplication.class, args);
-
-		System.out.println("lecim");
-
 	}
 
 

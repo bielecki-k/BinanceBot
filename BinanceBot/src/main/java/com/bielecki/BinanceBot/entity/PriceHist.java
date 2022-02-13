@@ -32,24 +32,17 @@ public class PriceHist {
         this.price = price;
     }
 
-    public PriceHist(Long id, String currency_name, Timestamp timestamp, float price) {
-        this.id = id;
-        this.curencyName = currency_name;
-        this.timestamp = timestamp;
-        this.price = price;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getCurrencyname() {
+    public String getCurrencyName() {
         return curencyName;
     }
-    public void setCurrencyname(String currencyname) {
+    public void setCurrencyName(String currencyname) {
         this.curencyName = currencyname;
     }
 
