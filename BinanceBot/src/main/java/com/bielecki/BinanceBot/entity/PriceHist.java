@@ -7,7 +7,6 @@ import java.sql.Timestamp;
 @Table(schema = "public",name="price_hist")
 public class PriceHist {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)

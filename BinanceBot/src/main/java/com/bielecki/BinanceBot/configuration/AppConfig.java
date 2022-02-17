@@ -45,16 +45,4 @@ public class AppConfig {
         };
     }
 
-//    @Bean
-//    private static void extracted() { //binance simple get price
-//        LinkedHashMap<String,Object> parameters = new LinkedHashMap<>();
-//
-//        SpotClientImpl client = new SpotClientImpl();
-//
-//        parameters.put("symbol","BTCBUSD");
-//        String result = client.createMarket().averagePrice(parameters);
-//        logger.info("bean: {}",result);
-//    }
-
-
 }

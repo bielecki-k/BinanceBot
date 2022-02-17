@@ -4,6 +4,7 @@ import com.bielecki.BinanceBot.BinanceBotApplication;
 import com.bielecki.BinanceBot.entity.PriceHist;
 import com.bielecki.BinanceBot.repository.PriceHistCRUDRepository;
 import com.binance.connector.client.impl.SpotClientImpl;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +31,17 @@ public class GetAndSaveServiceImpl implements GetAndSaveService{
         parameters.put("symbol", "BTCBUSD");
         String result = client.createMarket().averagePrice(parameters);
         logger.info("bean: {}", result);
+        jsonToFloat(result);
 
         //save to DB
         priceHistCRUDRepository.save(new PriceHist("BTCBUSD",new Timestamp(System.currentTimeMillis()),12));
+    }
+
+    private void jsonToFloat(String jsonResult){
+
+        JSONObject json = new JSONObject(jsonResult);
+        String tech = json.getString("price");
+
+        logger.info("jsonToFloat: {}",tech);
     }
 }
