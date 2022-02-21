@@ -1,7 +1,9 @@
 package com.bielecki.BinanceBot.service;
 
 import com.bielecki.BinanceBot.entity.PriceHist;
+import com.bielecki.BinanceBot.entity.TransactionHist;
 import com.bielecki.BinanceBot.repository.PriceHistCRUDRepository;
+import com.bielecki.BinanceBot.repository.TransactionHistCRUDRepository;
 import com.bielecki.BinanceBot.utils.Utils;
 import com.binance.connector.client.impl.SpotClientImpl;
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import java.sql.Timestamp;
 import java.util.LinkedHashMap;
+import java.util.List;
 
 @Service
 public class GetAndSaveServiceImpl implements GetAndSaveService{
@@ -19,6 +22,8 @@ public class GetAndSaveServiceImpl implements GetAndSaveService{
 
     @Autowired
     PriceHistCRUDRepository priceHistCRUDRepository;
+    @Autowired
+    TransactionHistCRUDRepository transactionHistCRUDRepository;
 
     @Override
     @Scheduled(fixedRate = 3000)
@@ -32,6 +37,15 @@ public class GetAndSaveServiceImpl implements GetAndSaveService{
 
         //save to DB
         priceHistCRUDRepository.save(new PriceHist("BTCBUSD",new Timestamp(System.currentTimeMillis()),Utils.jsonToFloat(result)));
+    }
+
+    @Override
+    public void getActiveTransactions(){
+
+        List<TransactionHist> activeTransactions = transactionHistCRUDRepository.getActive();
+        activeTransactions.forEach(System.out::println);
+
+
     }
 
 

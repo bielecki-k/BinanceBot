@@ -22,7 +22,8 @@ public class Starter implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... args) {
-        getAndSaveService.getAndSavePrice();
+//        getAndSaveService.getAndSavePrice();
+        getAndSaveService.getActiveTransactions();
 
     }
 

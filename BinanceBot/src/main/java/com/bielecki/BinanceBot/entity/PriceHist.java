@@ -13,7 +13,7 @@ public class PriceHist {
     private Long id;
 
     @Column(name="currency_name", nullable = false)
-    private String curencyName;
+    private String currencyName;
 
     @Column(name="timestamp", nullable = false)
     private Timestamp timestamp;
@@ -26,7 +26,7 @@ public class PriceHist {
     }
 
     public PriceHist(String currency_name, Timestamp timestamp, float price) {
-        this.curencyName = currency_name;
+        this.currencyName = currency_name;
         this.timestamp = timestamp;
         this.price = price;
     }
@@ -39,10 +39,10 @@ public class PriceHist {
     }
 
     public String getCurrencyName() {
-        return curencyName;
+        return currencyName;
     }
     public void setCurrencyName(String currencyname) {
-        this.curencyName = currencyname;
+        this.currencyName = currencyname;
     }
 
     public Timestamp getTimestamp() {
@@ -63,7 +63,7 @@ public class PriceHist {
     public String toString() {
         return "PriceHist{" +
                 "id=" + id +
-                ", currency_name='" + curencyName + '\'' +
+                ", currency_name='" + currencyName + '\'' +
                 ", timestamp=" + timestamp +
                 ", price=" + price +
                 '}';

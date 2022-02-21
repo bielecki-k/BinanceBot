@@ -13,7 +13,7 @@ public class ScheduledTasks { //left for test impl
 
     private static final Logger logger = LoggerFactory.getLogger(GetAndSaveServiceImpl.class);
 
-//    @Scheduled(fixedRate = 10000)
+//    @Scheduled(fixedRate = 10000) // todo remove to Starter class?
 //    public void scheduleTaskFixedRate(){
 //        logger.info("scheduleTaskFixedRate executed at {}", LocalDateTime.now());
 //    }

@@ -12,18 +12,18 @@ public class TransactionHist {
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Lob
+//    @Lob
     @Column(name = "currency_name", nullable = false)
     private String currencyName;
 
     @Column(name = "is_active", nullable = false, precision = 131089)
-    private BigDecimal isActive;
+    private Integer isActive;
 
     @Column(name = "price_at_buy", nullable = false, precision = 131089)
     private BigDecimal priceAtBuy;
 
-    @Column(name = "bought_price", nullable = false, precision = 131089)
-    private BigDecimal boughtPrice;
+    @Column(name = "bought_amount", nullable = false, precision = 131089)
+    private BigDecimal boughtAmount;
 
     @Column(name = "buy_timestamp", nullable = false)
     private Instant buyTimestamp;
@@ -36,12 +36,12 @@ public class TransactionHist {
         this.buyTimestamp = buyTimestamp;
     }
 
-    public BigDecimal getBoughtPrice() {
-        return boughtPrice;
+    public BigDecimal getBoughtAmount() {
+        return boughtAmount;
     }
 
-    public void setBoughtPrice(BigDecimal boughtPrice) {
-        this.boughtPrice = boughtPrice;
+    public void setBoughtAmount(BigDecimal boughtAmount) {
+        this.boughtAmount = boughtAmount;
     }
 
     public BigDecimal getPriceAtBuy() {
@@ -52,11 +52,11 @@ public class TransactionHist {
         this.priceAtBuy = priceAtBuy;
     }
 
-    public BigDecimal getIsActive() {
+    public Integer getIsActive() {
         return isActive;
     }
 
-    public void setIsActive(BigDecimal isActive) {
+    public void setIsActive(Integer isActive) {
         this.isActive = isActive;
     }
 
@@ -74,5 +74,17 @@ public class TransactionHist {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "TransactionHist{" +
+                "id=" + id +
+                ", currencyName='" + currencyName + '\'' +
+                ", isActive=" + isActive +
+                ", priceAtBuy=" + priceAtBuy +
+                ", boughtAmount=" + boughtAmount +
+                ", buyTimestamp=" + buyTimestamp +
+                '}';
     }
 }

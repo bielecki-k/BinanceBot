@@ -11,7 +11,7 @@ public interface PriceHistCRUDRepository extends CrudRepository<PriceHist,Long> 
 
     List<PriceHist> findAll();
     <S extends PriceHist> S save(S entity);
-    List<PriceHist> findPriceBycurencyName(String curencyName);
+    List<PriceHist> findPriceByCurrencyName(String currencyName);
 
 
 }
