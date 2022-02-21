@@ -3,6 +3,7 @@ package com.bielecki.BinanceBot.service;
 import com.bielecki.BinanceBot.BinanceBotApplication;
 import com.bielecki.BinanceBot.entity.PriceHist;
 import com.bielecki.BinanceBot.repository.PriceHistCRUDRepository;
+import com.bielecki.BinanceBot.utils.Utils;
 import com.binance.connector.client.impl.SpotClientImpl;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -23,25 +24,16 @@ public class GetAndSaveServiceImpl implements GetAndSaveService{
 
     @Override
     public void getAndSavePrice() {
-        logger.info("service getAndSavePrice");
-
         //get price
         LinkedHashMap<String, Object> parameters = new LinkedHashMap<>();
         SpotClientImpl client = new SpotClientImpl();
         parameters.put("symbol", "BTCBUSD");
         String result = client.createMarket().averagePrice(parameters);
         logger.info("bean: {}", result);
-        jsonToFloat(result);
 
         //save to DB
-        priceHistCRUDRepository.save(new PriceHist("BTCBUSD",new Timestamp(System.currentTimeMillis()),12));
+        priceHistCRUDRepository.save(new PriceHist("BTCBUSD",new Timestamp(System.currentTimeMillis()),Utils.jsonToFloat(result)));
     }
 
-    private void jsonToFloat(String jsonResult){
 
-        JSONObject json = new JSONObject(jsonResult);
-        String tech = json.getString("price");
-
-        logger.info("jsonToFloat: {}",tech);
-    }
 }
