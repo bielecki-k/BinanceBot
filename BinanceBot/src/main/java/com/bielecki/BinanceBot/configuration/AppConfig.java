@@ -20,29 +20,28 @@ public class AppConfig {
 
     private static final Logger logger = LoggerFactory.getLogger(AppConfig.class);
 
-    @Bean
-    public CommandLineRunner demoCRUD(PriceHistCRUDRepository repository) {
-        return (args) -> {
-            // save a new price
-//            repository.save(new PriceHist("xx",new Timestamp(System.currentTimeMillis()),12));
-
-
-            // fetch all customers
-            logger.info("PriceHist found with findAll():");
-            logger.info("-------------------------------");
-            for (PriceHist priceHist : repository.findAll()) {
-                logger.info(priceHist.toString());
-            }
-            logger.info("");
-
-//            // fetch an individual priceHist by name
-//            List<PriceHist> priceHist = repository.findPriceBycurencyName("nn");
-//            logger.info("PriceHist found with findPriceBycurencyName(nn):");
-//            logger.info("--------------------------------");
-//            logger.info(priceHist.toString());
+//    @Bean //turned off temporary
+//    public CommandLineRunner demoCRUD(PriceHistCRUDRepository repository) {
+//        return (args) -> {
+//            // save a new price
+////            repository.save(new PriceHist("xx",new Timestamp(System.currentTimeMillis()),12));
+//
+//            // fetch all customers
+//            logger.info("PriceHist found with findAll():");
+//            logger.info("-------------------------------");
+//            for (PriceHist priceHist : repository.findAll()) {
+//                logger.info(priceHist.toString());
+//            }
 //            logger.info("");
-
-        };
-    }
+//
+////            // fetch an individual priceHist by name
+////            List<PriceHist> priceHist = repository.findPriceBycurencyName("nn");
+////            logger.info("PriceHist found with findPriceBycurencyName(nn):");
+////            logger.info("--------------------------------");
+////            logger.info(priceHist.toString());
+////            logger.info("");
+//
+//        };
+//    }
 
 }
