@@ -13,7 +13,7 @@ public interface TransactionHistCRUDRepository extends CrudRepository<Transactio
 
     List<TransactionHist> findAll();
     <S extends TransactionHist> S save(S entity);
-    @Query(value="select * from transaction_hist where is_active = 1",nativeQuery = true)
+    @Query(value="select * from transaction_hist where is_active = 1 and currency_name = 'BTCBUSD'",nativeQuery = true)
     List<TransactionHist> getActive();
 
 

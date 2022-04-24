@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface PriceHistCRUDRepository extends CrudRepository<PriceHist,Long> {
+public interface PriceHistCRUDRepository extends CrudRepository<PriceHist,Long> { //todo remove me from DB
 
     List<PriceHist> findAll();
     <S extends PriceHist> S save(S entity);

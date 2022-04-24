@@ -15,4 +15,9 @@ public class BinanceBotApplication {
 		SpringApplication.run(BinanceBotApplication.class, args);
 	}
 
+	//todo i jak engine znajdzie okazje by sprzedac bo zdrozalo lub jak spadnie o 10% to wyslac informacje do serwisu od kupowania/sprzedawania
+	//todo i na tym mozna by zakonczyc
+	//todo ewentualnie poprawic lacznie z API Binance - zeby laczylo sie z moim kontem i bylo w stanie cos kupic/sprzedac
+	//w sumie to bedzie zakonczone glowne zalozenie projektu
+
 }
