@@ -3,6 +3,7 @@ package com.bielecki.BinanceBot.entity;
 import javax.persistence.*;
 import java.sql.Timestamp;
 
+//@Deprecated
 @Entity
 @Table(schema = "public",name="price_hist")
 public class PriceHist {

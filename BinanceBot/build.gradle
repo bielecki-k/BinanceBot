@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.bielecki'
 version = '0.0.1-SNAPSHOT'
-//sourceCompatibility = '17'
+sourceCompatibility = '17'
 
 ext {
 	javaMainClass = "com.bielecki.BinanceBot.BinanceBotApplication"
@@ -31,6 +31,18 @@ dependencies {
 	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.5.Final'
 	implementation group: 'org.springframework', name: 'spring-orm', version: '5.3.15'
 	implementation group: 'commons-dbcp', name: 'commons-dbcp', version: '1.2.2'
+
+//	implementation 'org.simplejavamail:simple-java-mail:7.5.0'
+	// https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api
+	implementation group: 'jakarta.mail', name: 'jakarta.mail-api', version: '2.1.0'
+	// https://mvnrepository.com/artifact/jakarta.activation/jakarta.activation-api
+	implementation group: 'jakarta.activation', name: 'jakarta.activation-api', version: '2.1.0'
+	// https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail
+	implementation group: 'com.sun.mail', name: 'jakarta.mail', version: '2.0.1'
+	// https://mvnrepository.com/artifact/org.eclipse.angus/angus-mail
+	implementation group: 'org.eclipse.angus', name: 'angus-mail', version: '1.0.0'
+
+
 
 
 
